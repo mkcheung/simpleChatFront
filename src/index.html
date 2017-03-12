@@ -7,8 +7,36 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+</head><body>
+		<strong><u>Welcome to Chat.</u></strong>
+
+		<div class="row">
+			<div class="col-md-4" id="loggedInUsers">
+			<strong>Users</strong>
+				<ul id = "listOfUsers">
+				</ul>
+			</div>
+			<div class="col-md-5">
+				<div id="messages">
+
+					<app-root>Loading...</app-root>
+				</div>
+			</div>
+			<div class="col-md-3">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<form id="form-send-message" action="/messages" method="POST">
+					<input id="message" name="message"/>
+				</form>
+			</div>
+		</div>
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+		<button onclick="location.href = '/logout';" id="myButton" class="float-left submit-button" >Logout</button>
+		<script src="js/jquery-3.1.1.js"></script>
+
+	</body>
 <body>
-  <app-root>Loading...</app-root>
 </body>
 </html>
